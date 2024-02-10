@@ -8,13 +8,21 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header flex-c">
       <div class="circles"></div>
       <h1 class="title">Simple, traffic-based pricing</h1>
       <p class="subtitle">Sign-up for our 30-day trial. No credit card required.</p>
     </header>
+
+    <div class="main__container flex-c">
+      <div class="pricing__top">
+        <span class="page__views" id="pageviews">100K PAGEVIEWS</span>
+        <div class="slider-container">
+          <input type="range" min="0" max="5" value="0" class="slider" id="mySlider" />
+        </div>
+        <div class="price" id="price"></div>
+      </div>
+      <div class="pricing__bottom"></div>
+    </div>
   </body>
 </html>
-<!-- <div class="slider-container">
-      <input type="range" min="0" max="5" value="0" class="slider" id="mySlider" />
-    </div> -->
