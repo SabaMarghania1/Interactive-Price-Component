@@ -68,6 +68,7 @@ body {
   margin: 0 2.4rem;
   padding: 3rem 2.4rem;
   border-radius: 8px;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
 }
 
 .pricing__top {
@@ -78,8 +79,36 @@ body {
 
 .page__views {
   color: #848ead;
-  font-size: 12px;
+  font-size: 1.2rem;
   letter-spacing: 1.714px;
   text-transform: uppercase;
   margin-bottom: 4rem;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  font-size: 3.2rem;
+  color: #293356;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 3.4rem;
+}
+
+.period {
+  color: #848ead;
+  font-size: 1.4rem;
+}
+
+.switch__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 12px;
+  align-items: center;
+  color: #848ead;
+}
+
+.yearly {
+  position: relative;
 }
