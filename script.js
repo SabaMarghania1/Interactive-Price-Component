@@ -1,3 +1,8 @@
+const pageViews = document.getElementById("pageviews");
+const price = document.getElementById("price");
+const period = price.nextElementSibling;
+const switcher = document.getElementById("switching");
+
 const slider = document.getElementById("mySlider");
 
 slider.addEventListener("change", e => {
