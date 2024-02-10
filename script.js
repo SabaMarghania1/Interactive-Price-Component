@@ -3,7 +3,7 @@ const priceElement = document.getElementById("price");
 const switcher = document.getElementById("switching");
 const slider = document.getElementById("mySlider");
 
-const pricingTiers = [
+const pricings = [
   {views: "10K", price: 8},
   {views: "50K", price: 12},
   {views: "100K", price: 16},
@@ -12,7 +12,7 @@ const pricingTiers = [
 ];
 
 function updatePricing(sliderValue) {
-  const {views, price} = pricingTiers[sliderValue];
+  const {views, price} = pricings[sliderValue];
   const finalPrice = switcher.checked ? calculateDiscount(price) : price;
   pageViewsElement.innerHTML = `${views} PAGEVIEWS`;
   priceElement.innerHTML = `$${finalPrice}.00`;
